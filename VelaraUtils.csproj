@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="DalamudSdk/1.5.14">
+    <PropertyGroup>
+        <AssemblyName>VelaraUtils</AssemblyName>
+        <Authors>Bilenkonito</Authors>
+        <Copyright>Bilenkonito 2022</Copyright>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <OutputType>DalamudPlugin</OutputType>
+        <IncludeXivCommon>true</IncludeXivCommon>
+        <DalamudPackagerMakeZip>false</DalamudPackagerMakeZip>
+        <PackagePlugin>true</PackagePlugin>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="Build\**\*.dll" />
+        <EmbeddedResource Remove="Build\**\*.dll" />
+        <Compile Remove="Build\**\*.dll" />
+    </ItemGroup>
+</Project>
